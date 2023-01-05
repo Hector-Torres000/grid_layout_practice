@@ -1,0 +1,86 @@
+/*-----body-----*/
+body {
+  margin: 0;
+}
+
+/*-----header-----*/
+header,
+header * {
+  border: solid 2px black;
+}
+/*nav*/
+nav {
+  display: grid;
+  grid-template-columns: 1fr 70% 1fr;
+  align-items: center;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  justify-items: center;
+
+  list-style-type: none;
+  padding-left: 0;
+}
+/*-----main-----*/
+main,
+main * {
+  border: solid 2px black;
+}
+main > h1,
+main > h2 {
+  display: inline-block;
+  width: 49%;
+}
+main > h2 {
+  text-align: right;
+}
+/*--section1--*/
+.section1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  height: 300px;
+}
+/*section1part1*/
+.section1part1 {
+  display: grid;
+  align-items: flex-end;
+  align-content: end;
+}
+
+.section1part1 * {
+  margin: 5px 0;
+}
+/*section1part2*/
+.section1part2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+/*-----footer-----*/
+footer,
+footer * {
+  border: 2px solid black;
+}
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  height: 300px;
+}
+footer div {
+  display: grid;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+
+footer div * {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+footer div img {
+  align-self: stretch;
+  justify-self: stretch;
+  display: block;
+}
