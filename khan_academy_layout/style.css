@@ -1,0 +1,47 @@
+/*-----body-----*/
+body {
+  margin: 0;
+}
+/*-----header-----*/
+header,
+header * {
+  border: solid 2px black;
+}
+/*nav*/
+nav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  list-style-type: none;
+}
+/*-----main-----*/
+main,
+main * {
+  border: solid 2px black;
+}
+main {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+main section {
+  padding: 0;
+}
+
+main section img {
+  align-self: stretch;
+  justify-self: stretch;
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+
+main .mainPart2 ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style-type: none;
+}
