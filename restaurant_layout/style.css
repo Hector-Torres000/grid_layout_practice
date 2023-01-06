@@ -1,0 +1,80 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+/*-----header-----*/
+header,
+header * {
+  border: 2px solid black;
+}
+header {
+  height: 300px;
+}
+/*---nav---*/
+header nav {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  align-items: center;
+  text-align: center;
+}
+header nav ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  list-style-type: none;
+}
+/*---section---*/
+header section {
+  display: grid;
+}
+/*-----main-----*/
+main,
+main * {
+  border: solid 2px black;
+}
+/*---part1---*/
+main .part1 {
+  display: grid;
+  justify-items: right;
+}
+/*---part2---*/
+main .part2 div {
+  text-align: center;
+}
+main .part2 div ul {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  justify-items: center;
+  list-style: none;
+}
+/*images*/
+main .part2 .images {
+  display: grid;
+  grid-template-columns: repeat(4, 20%);
+  justify-items: center;
+}
+main .part2 .images * {
+  display: block;
+}
+/*---part3---*/
+.part3 {
+  text-align: center;
+}
+.part3 > div {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+/*-----footer-----*/
+footer,
+footer * {
+  border: 3px solid black;
+}
+footer {
+  text-align: center;
+}
