@@ -1,0 +1,78 @@
+/*-----body-----*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  box-sizing: inherit;
+}
+/*-----header-----*/
+header,
+header * {
+  border: 2px solid black;
+}
+header {
+  display: grid;
+  height: 300px;
+}
+/*---nav---*/
+nav {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  align-items: center;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 0;
+  text-align: right;
+  list-style-type: none;
+}
+nav img {
+  justify-self: center;
+}
+/*---section----*/
+header section {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+
+  align-self: flex-end;
+  margin: auto 10%;
+}
+/*-----main-----*/
+main,
+main * {
+  border: 2px solid black;
+}
+/*---mainSection1---*/
+main .mainSection1 {
+  display: grid;
+  justify-items: center;
+  margin: auto 20%;
+}
+/*mainSection2*/
+main .mainSection2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* justify-items: center;
+  justify-content: center; */
+}
+main .mainSection2 div {
+  width: 60%;
+  margin: auto 20%;
+  text-align: center;
+}
+/*-----footer-----*/
+footer,
+footer * {
+  border: 2px solid black;
+}
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-align: center;
+  margin: auto 20%;
+}
